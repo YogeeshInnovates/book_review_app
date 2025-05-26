@@ -60,6 +60,10 @@
   width: 100%;
 }
 
+.reviews-section p{
+    font-size: 17px;
+    color:black;
+}
 .review {
   padding: 8px;
   border-bottom: 1px solid #ddd;
