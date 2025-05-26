@@ -1,27 +1,21 @@
-
-
-/* Ensure body takes full width and removes any margin */
-
-.book-details-container-section{
-    width: 100%;
+.book-details-container-section {
+  width: 90vw;
   padding: 0;
-  margin: 0;
+  margin: 0 auto; /* center horizontally */
   display: flex;
   justify-content: center;
-    margin: 0;
-
   box-sizing: border-box;
- width: 90vw;
 }
+
 .book-details-container {
   width: 100%;
-  padding: 2rem 5vw; /* adds left and right padding */
+  padding: 2rem 5vw;
   box-sizing: border-box;
 }
 
 .book-card-detail {
   display: flex;
-   width: 100%;
+  width: 100%;
   flex-direction: column;
   align-items: center;
   background-color: #fff;
@@ -29,7 +23,7 @@
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   max-width: 1500px;
-  margin: 0 auto; /* center horizontally */
+  margin: 0 auto;
 }
 
 .book-detail-image {
@@ -71,7 +65,23 @@
   border-bottom: none;
 }
 
-/* Optional: responsive fix */
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+  .book-details-container-section {
+    width: 95vw;
+  }
+  .book-card-detail {
+    padding: 1.5rem;
+  }
+  .book-detail-image {
+    width: 160px;
+    height: 240px;
+  }
+  .book-title {
+    font-size: 20px;
+  }
+}
+
 @media (max-width: 768px) {
   .book-card-detail {
     padding: 1rem;
@@ -80,5 +90,28 @@
   .book-detail-image {
     width: 150px;
     height: 225px;
+  }
+
+  .book-title {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .book-details-container-section {
+    flex-direction: column;
+    width: 100vw;
+    padding: 0 10px;
+  }
+  .book-card-detail {
+    padding: 1rem 0.5rem;
+  }
+  .book-detail-image {
+    width: 120px;
+    height: 180px;
+    margin-bottom: 0.8rem;
+  }
+  .book-title {
+    font-size: 16px;
   }
 }

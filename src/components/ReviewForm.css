@@ -6,9 +6,17 @@
   padding: 20px;
   border-radius: 10px;
   max-width: 800px;
-  margin-top: 20px;
-  width:400px;
+  width: 100%; /* changed from fixed 400px to responsive */
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  margin-top: 20px;
+  box-sizing: border-box;
+}
+
+/* Optional: wrap the form inside a centered container if needed */
+.review-form-wrapper {
+  display: flex;
+  justify-content: center;
+  padding: 0 15px; /* horizontal padding on small screens */
 }
 
 .review-form h4 {
@@ -23,6 +31,8 @@
   border-radius: 6px;
   font-size: 16px;
   resize: vertical;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .review-form textarea {
@@ -30,7 +40,7 @@
 }
 
 .review-form input[type="number"] {
-  width: 190px;
+  max-width: 190px;
 }
 
 .review-form button {

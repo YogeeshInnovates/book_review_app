@@ -6,7 +6,8 @@
   background: linear-gradient(135deg, #f6d365 0%, #fda085 100%);
   font-family: Arial, sans-serif;
   padding: 20px;
-  width:100vw;
+  width: 100vw;
+  box-sizing: border-box;
 }
 
 .signup-container {
@@ -16,6 +17,7 @@
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
   width: 100%;
   max-width: 400px;
+  box-sizing: border-box;
 }
 
 .signup-container h2 {
@@ -42,6 +44,7 @@
   border: 1px solid #ccc;
   font-size: 1rem;
   resize: vertical;
+  box-sizing: border-box;
 }
 
 .signup-container button {
