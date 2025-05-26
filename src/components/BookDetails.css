@@ -57,8 +57,13 @@
   overflow-y: auto;
   background: #f9f9f9;
   margin-bottom: 20px;
+
+  /* New additions: */
+  box-sizing: border-box;
   width: 100%;
+  max-width: 100%; /* Prevent overflow on mobile */
 }
+
 
 .reviews-section p{
     font-size: 17px;
@@ -104,22 +109,19 @@
     font-size: 18px;
   }
 }
-
 @media (max-width: 480px) {
   .book-details-container-section {
     flex-direction: column;
     width: 100vw;
     padding: 0 10px;
   }
+
   .book-card-detail {
-    padding: 1rem 0.5rem;
+    padding: 1rem; /* previously 1rem 0.5rem */
   }
-  .book-detail-image {
-    width: 120px;
-    height: 180px;
-    margin-bottom: 0.8rem;
-  }
-  .book-title {
-    font-size: 16px;
+
+  .reviews-section {
+    padding: 8px; /* slightly reduced for smaller screens */
   }
 }
+
